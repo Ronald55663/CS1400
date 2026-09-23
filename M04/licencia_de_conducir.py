@@ -59,3 +59,57 @@ elif edad >= 18 and lentes == "si" and cinturon == "si" and not alcohol == "si":
 # mostramos un mensaje de seguridad.
 else:
     print("Algo no está bien. Mejor no conduzcas.")
+
+  # ANÁLISIS M04
+#
+# 1. ¿Cuántos commits hiciste?
+# Hice ___ commits durante esta tarea.
+#
+# 2. ¿Qué método te pareció más fácil de usar para guardar y subir tus
+# cambios a GitHub: los comandos en la terminal o la interfaz visual de
+# Visual Studio Code? ¿Por qué?
+# Me pareció más fácil usar la interfaz visual de Visual Studio Code
+# porque puedo ver los cambios y los archivos modificados de una manera
+# más sencilla antes de hacer el commit.
+#
+# 3. ¿Para qué sirve ejecutar el comando git status antes de empezar
+# a trabajar?
+# git status sirve para revisar el estado del repositorio. Me permite
+# saber qué archivos fueron modificados, cuáles son nuevos y cuáles
+# están pendientes de guardar en un commit.
+#
+# 4. ¿Por qué es fundamental descargar (git pull) los cambios más
+# recientes del repositorio de la profesora?
+# git pull es importante porque descarga los cambios más recientes del
+# repositorio de la profesora. Esto permite trabajar con la versión
+# más actualizada y ayuda a evitar conflictos al subir mis cambios.
+#
+# 5. ¿Cuál es la diferencia entre hacer un fork y clonar un repositorio?
+# Un fork crea una copia del repositorio en mi propia cuenta de GitHub.
+# Un clone descarga una copia del repositorio desde GitHub a mi
+# computadora para poder trabajar con los archivos localmente.
+#
+# 6. ¿Por qué es buena práctica escribir mensajes claros y descriptivos
+# en cada commit?
+# Es una buena práctica porque los mensajes claros permiten saber qué
+# cambio se realizó en cada commit. Mensajes como "cambios" o "listo"
+# no explican exactamente qué se modificó.
+#
+# 7. ¿Qué tipos de mensajes agregaste?
+# Agregué mensajes relacionados con los cambios que fui realizando
+# en el código, como crear, modificar y mejorar partes de la tarea M04.
+#
+# 8. ¿Cuál es tu sentencia preferida?
+# Mi sentencia preferida es if porque permite que el programa tome
+# decisiones dependiendo de si una condición es verdadera o falsa.
+#
+# 9. ¿Cuándo entra el programa a la segunda sentencia de tu tarea?
+# El programa entra a la segunda sentencia cuando la condición de la
+# primera sentencia no se cumple y necesita comprobar la siguiente
+# condición.
+#
+# 10. ¿Qué aprendiste del README.md en tu carpeta M04?
+# Aprendí que el README.md contiene instrucciones importantes sobre
+# la tarea y explica lo que debo realizar. También aprendí que los
+# comentarios ayudan a explicar el código y hacen que sea más fácil
+# de entender para otras personas y para mí mismo.
