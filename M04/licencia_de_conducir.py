@@ -63,7 +63,7 @@ else:
   # ANÁLISIS M04
 #
 # 1. ¿Cuántos commits hiciste?
-# Hice  commits durante esta tarea.
+# Hice 4 commits durante esta tarea.
 #
 # 2. ¿Qué método te pareció más fácil de usar para guardar y subir tus
 # cambios a GitHub: los comandos en la terminal o la interfaz visual de
