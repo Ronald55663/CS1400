@@ -27,4 +27,27 @@ Bienvenido al programa de comidas de Latinoamérica.
 Opciones: tacos, arepas, ceviche, pupusas, empanadas
 ¿Qué comida quieres conocer? Tacos
 Los tacos son típicos de México.
-"""
+""" 
+# muestra mensaje de bienvenida
+print("Bienvenido al programa de comidas de Latinoamérica.")
+
+# muestra lista de opciones
+print("Opciones: tacos, arepas, ceviche, pupusas, empanadas")
+
+# toma la entrada del usuario 
+comida = input("¿Qué comida quieres conocer? ")
+comida = comida.lower()
+
+# verifica la comida elegida
+if comida == "tacos":
+    print("Los tacos son típicos de México.")
+elif comida == "arepas":
+    print("Las arepas son típicas de venezuela.")
+elif comida == "ceviche":
+    print("El ceviche es típico de Perú.")
+elif comida == "pupusas":
+    print("Las pupusas son típicas de El Salvador.")
+elif comida == "empanadas":
+    print("Las empanadas son típicas de Venezuela.")
+else:
+    print("No tenemos información sobre esa comida.")
