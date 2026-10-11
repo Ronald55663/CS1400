@@ -2,8 +2,8 @@
 ====================================================================
 Mi Primera Función en Turtle
 ====================================================================
-NOMBRE: 
-Objetivo:
+NOMBRE: ronald medina
+Objetivo: Aprender a crear y utilizar funciones en Turtle para dibujar figuras geométricas.
 Entender cómo encapsular código en una función para reutilizarlo y 
 dibujar figuras personalizadas de manera sencilla.
 
@@ -77,7 +77,16 @@ dibujar_figura(lados=5, tamaño=60, color_borde="purple", color_relleno="plum")
 
 # Dibujar un hexágono (6 lados)
 mover(150, 0)
-dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skyblue")
+dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skyblue") 
+
+# Dibujar cuadrado (4 lados) sin usar la función dibujar_figura
+mover(200, 200)
+t.color("red", "black")
+t.begin_fill()
+for _ in range(4):
+    t.forward(80)
+    t.left(90)
+t.end_fill()
 
 
 # ==================================================================
@@ -86,11 +95,17 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 """
 1.  ¿Cuantas funciones hay en este programa? Que proposito tienen? En tus propias palabras agrega comentario completo.
 
-2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?
+# En este programa hay dos funciones principales: 'dibujar_figura' y 'mover'. se utilizan para dibujar figuras geométricas y mover la tortuga a diferentes posiciones en la pantalla.
 
-3 ¿En que numero de linea termina la funcion mover?
+2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?  
+
+# Para hacer un octágono, tendrías que cambiar el parámetro 'lados' a 8.
+
+3. ¿En que numero de linea termina la funcion mover?
+# La función 'mover' termina en la línea 62.
 
 4. Bajo la seccion de pruebas, intenta hacer una nueva figura sin el uso de la funcion dibujar_figura.
+
 
 5. Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
       
