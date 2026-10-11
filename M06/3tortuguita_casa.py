@@ -1,3 +1,4 @@
+# Ronald Medina
 # ==========================================
 # TAREA Turtle 🐢
 # ==========================================
@@ -31,12 +32,20 @@ import turtle
 #  Iniciar ventana y objeto de tortuga y agregar el speed o velocidad. Pista: Mira la Tarea 1turtle.py
 
 # Escribe aquí tu código
+pantalla = turtle.Screen()
+pantalla.bgcolor("lightyellow")
+pantalla.title("Tortuguita Casa")
+
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(3) 
 
 # TODO 2
 #  Crea la tortuga usando make_turtle().
 #  La ventana debe tener 400 de alto y 400 de ancho.
 
 # Escribe aquí tu código
+pantalla.setup(width=400, height=400)
 
 # Captura de Pantalla, nombralo "TUNOMBRE_1_2" y guardalo en la carpeta M06
 
@@ -48,9 +57,11 @@ import turtle
 # Mueve la tortuga hacia adelante 100 pasos.
 # Observa qué sucede.
 
-# Escribe aquí tu código
 
+t.fillcolor("lightblue")
+t.begin_fill()
 
+t.forward(100)
 # ------------------------------------------
 # Girar la tortuga
 # ------------------------------------------
@@ -59,7 +70,8 @@ import turtle
 # Gira la tortuga 90 grados hacia la izquierda.
 # Luego avanza otros 100 pasos.
 
-# Escribe aquí tu código
+t.left(90)
+t.forward(100)
 
 
 # ------------------------------------------
@@ -77,7 +89,16 @@ print("Dibujando un cuadrado...")
 # Debes usar forward() y left() varias veces.
 # La tortuga debe terminar donde empezó.
 
-# Escribe aquí tu código
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.fillcolor("green")
+
+t.end_fill()
+
+print("Cuadrado terminado")
 
 
 # ------------------------------------------
@@ -90,6 +111,69 @@ print("Dibujando un cuadrado...")
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
 
+# Dibujar el techo de la casa
+# Dibujar el techo de la casa
+print("Comenzando el techo")
+
+t.penup()
+t.goto(0, 100)
+t.setheading(0)
+t.pendown()
+
+t.fillcolor("yellow")
+t.begin_fill()
+
+t.left(60)
+t.forward(100)
+t.right(120)
+t.forward(100)
+t.right(120)
+t.forward(100)
+
+t.end_fill()
+
+print("Techo terminado")
+
+
+# Dibujar una puerta
+t.penup()
+t.goto(35, 0)
+t.setheading(90)
+t.pendown()
+# Pintar la puerta de amarillo claro
+t.fillcolor("black")
+t.begin_fill()
+
+t.forward(50)
+t.right(90)
+t.forward(30)
+t.right(90)
+t.forward(50)
+t.end_fill()
+
+# Dibujar la ventana izquierda
+t.penup()
+t.goto(10, 60)
+t.setheading(0)
+t.pendown()
+
+for i in range(4):
+    t.forward(20)
+    t.left(90)
+
+
+# Dibujar la ventana derecha
+t.penup()
+t.goto(70, 60)
+t.setheading(0)
+t.pendown()
+for i in range(4):
+    t.forward(20)
+    t.left(90)
+
+print("¡La casa se dibujó completamente!")
+pantalla.mainloop()
 
 # Mantiene la ventana abierta hasta que hagas clic en ella
 pantalla.exitonclick()
+
