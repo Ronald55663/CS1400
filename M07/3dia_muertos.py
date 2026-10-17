@@ -1,3 +1,4 @@
+#Ronald Medina 
 # Tarea 3: Organización de calaveritas y conteo de caracteres
 
 calaveritas = ["Alebrije", "Catrina", "Cempasúchil", "Pan de muerto", "Papel picado"]
@@ -10,17 +11,29 @@ for elemento in calaveritas:
 
 print("Palabras largas (Tradicional):", largas_tradicional)
 
-"""
 #8. Comprensión de Listas (List Comprehension): Re-escribe el bloque de código anterior
- en una sola línea utilizando comprensión de listas para crear largas_comprehension.
+#en una sola línea utilizando comprensión de listas para crear largas_comprehension.
+
+largas_comprehension = [elemento for elemento in calaveritas if len(elemento) > 7]
+
+print("Palabras largas (Comprensión):", largas_comprehension)
 
 #9. Utiliza una comprensión de listas para convertir todos los elementos de la lista
- calaveritas a mayúsculas usando .upper().
+
+calaveritas_mayusculas = [elemento.upper() for elemento in calaveritas]
+
+print("Calaveritas en mayúsculas:", calaveritas_mayusculas)
 
 #10. Comprensión de Diccionarios (Dictionary Comprehension): Crea un diccionario a
- partir de  la lista calaveritas donde la llave sea el nombre del elemento y el valor
- sea la cantidad de letras que tiene esa palabra (usando la función len()).
+#partir de  la lista calaveritas donde la llave sea el nombre del elemento y el valor
+#sea la cantidad de letras que tiene esa palabra (usando la función len()).
 
-#11. Pregunta de análisis: ¿Qué ventaja ofrece escribir la solución con comprensiones
- en lugar de usar un bucle for tradicional con un .append()?
-"""
+conteo_caracteres = {elemento: len(elemento) for elemento in calaveritas}
+
+print("Cantidad de caracteres por elemento:", conteo_caracteres)
+
+#11. Pregunta de análisis: ¿Qué ventaja ofrece escribir la solución con comprensiones en lugar de usar un bucle for tradicional con un .append()?
+
+# Las comprensiones permiten escribir código más corto, claro y fácil de leer.
+# También permiten crear listas o diccionarios en una sola línea,
+# evitando utilizar un bucle for tradicional con append().
