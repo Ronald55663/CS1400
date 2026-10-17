@@ -1,4 +1,4 @@
-
+#Ronald Medina
 # Tarea 2: El Registro de los Ancestros (Diccionarios y Conjuntos)
 
 # Tarea 2: Registro de visitas y ofrendas asignadas
