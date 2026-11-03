@@ -9,10 +9,17 @@ def mostrar_menu():
     # El programa seguirá ejecutándose hasta que el usuario elija salir.
     # TODO #1 Completa el menú de opciones imprimiendo un mensaje y las opciones.
     
+    """Muestra el menu principal con las opciones disponibles."""
+    print("\n--- Menú Principal ---")
+    print("1. Ver inventario")
+    print("2. Agregar/actualizar producto")
+    print("3. Buscar precio")
+    print("4. Guardar y Salir")
 
 def ejecutar_programa():
     # TODO #2 iniciar un diccionario vacio
-    
+    """Guarda todos los productos del inventario."""
+    mi_inventario = {}
     
     while True:
         mostrar_menu()
