@@ -39,6 +39,9 @@ REFRANES = {
 
     "Agua que no has de beber, dejala correr.":
         "Si algo no te conviene o no te toca, no te metas.",
+
+        "camaron que se duerme se lo lleva la corriente.":
+        "Si no estas atento a lo que pasa, te puedes perder algo importante.",
 }
 
 
@@ -87,6 +90,7 @@ def parte_uno_entrada_salida():
     nombre = input("Hola! Como te llamas? ")
 
     # TODO ¿Qué hace este bloque try/except ValueError?
+    # evita que el programa se detenga si el usuario escribe un valor que no se puede convertir a entero.
     # ¿Qué pasaría si el usuario escribe “veinte” y quitamos ese bloque?
 
     try:
@@ -104,6 +108,9 @@ def parte_uno_entrada_salida():
     print(f"Mucho gusto, {nombre}!")                 # f-string
     
     # TODO ¿Como usamos acentos en espanol, otra vez?
+    # Escribimos los caracteres directamente en el texto.
+    # El archivo debe estar guardado con codificacion UTF-8
+
     print("Tienes", edad, "anos.")                   # comas
     print("Tu comida favorita es " + comida + ".")   # concatenacion con +
 
@@ -131,6 +138,10 @@ def parte_uno_entrada_salida():
 # PARTE 2 (EXTRA- si tienes tiempo): CONSUMIR UNA API JSON
 # ==========================================================
 #TODO ¿Que hace este api?
+
+# Consulta jsonplaceholder, una API publica de prueba 
+# que devuelve datos de usuarios falsos en formato JSON.
+
 def parte_dos_api_json(nombre):
     """Consulta una API publica que responde en formato JSON."""
 
