@@ -1,4 +1,4 @@
-import requests
+import requests 
 
 def obtener_coordenadas(nombre_ciudad):
     """
